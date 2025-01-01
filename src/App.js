@@ -18,18 +18,18 @@ const App = () => {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
           <div className="container">
-            <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="/task-manager">
               Task Manager
             </Link>
             <div className="collapse navbar-collapse">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
+                  <Link className="nav-link" to="/task-manager">
                     Add Task
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/tasks">
+                  <Link className="nav-link" to="/task-manager/tasks">
                     Task List
                   </Link>
                 </li>
@@ -39,9 +39,9 @@ const App = () => {
         </nav>
         <div className="container mt-5">
           <Routes>
-            <Route path="/" element={<AddTask setTasks={setTasks} />} />
+            <Route path="/task-manager" element={<AddTask setTasks={setTasks} />} />
             <Route
-              path="/tasks"
+              path="/task-manager/tasks"
               element={<TaskList tasks={tasks} setTasks={setTasks} />}
             />
           </Routes>

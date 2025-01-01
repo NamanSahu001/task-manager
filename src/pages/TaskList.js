@@ -41,7 +41,7 @@ const TaskList = ({ tasks, setTasks }) => {
         </ul>
       )}
       <div className="mt-4 text-center">
-        <Link to="/" className="btn btn-primary">
+        <Link to="/task-manager" className="btn btn-primary">
           Add New Task
         </Link>
       </div>

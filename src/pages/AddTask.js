@@ -10,7 +10,7 @@ const AddTask = ({ setTasks }) => {
     if (task.trim()) {
       setTasks((prevTasks) => [...prevTasks, { task, done: false }]);
       setTask("");
-      navigate("/tasks");
+      navigate("/task-manager/tasks");
     }
   };
 
